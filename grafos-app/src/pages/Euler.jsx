@@ -4,10 +4,9 @@ import '../styles/Euler.css'
 import logoUV from '../assets/Logo_de_la_Universidad_Veracruzana.png'
 import logoFIEE from '../assets/LogoFIEE.png'
 
-/* =====================================================================
-   CAMINO DE EULER — Sección 3 (Vanesa)
-   Matemáticas Discretas II · 2026
-   ===================================================================== */
+/*
+
+   CAMINO DE EULER — Sección 3  */
 
 // ─── 20 preguntas del quiz (se barajan al inicio en 4 rondas de 5) ───
 const QUIZ = [
@@ -121,7 +120,7 @@ const QUIZ = [
   ], a: 0 },
 ]
 
-// ─── 5 ejercicios con grafos pequeños ───
+// 5 ejercicios con grafos pequeños
 const EJERCICIOS = [
   {
     titulo: 'Triángulo simple',
@@ -170,7 +169,7 @@ const EJERCICIOS = [
   },
 ]
 
-// ─── helpers ───
+//  helpers
 function shuffle(arr) {
   const a = [...arr]
   for (let i = a.length - 1; i > 0; i--) {
@@ -212,9 +211,9 @@ function analizarEuler(nodes, edges) {
   return { tipo: 'ninguno', titulo: 'Sin recorrido euleriano', texto: `Hay ${impares.length} vértices de grado impar. Para que exista camino euleriano debe haber 0 o 2.`, grados, impares }
 }
 
-// =====================================================================
+
 // COMPONENTE PRINCIPAL
-// =====================================================================
+
 export default function Euler() {
   const navigate = useNavigate()
   const [vista, setVista] = useState('menu')
@@ -251,15 +250,15 @@ export default function Euler() {
   )
 }
 
-// =====================================================================
+
 // MENÚ DE EULER
-// =====================================================================
+
 function Menu({ ir }) {
   const items = [
-    { key:'teoria',     emoji:'📖', label:'Teoría',     desc:'Definiciones, teorema de Euler y los puentes de Königsberg.' },
-    { key:'quiz',       emoji:'❓', label:'Quiz',       desc:'20 preguntas en 4 rondas de 5, sin repetir.' },
-    { key:'ejercicios', emoji:'✏️', label:'Ejercicios', desc:'5 grafos para identificar si tienen camino o circuito.' },
-    { key:'simulacion', emoji:'✨', label:'Simulación', desc:'Dibuja tu propio grafo y analízalo en vivo.' },
+    { key:'teoria',     emoji:'', label:'Teoría',     desc:'Definiciones, teorema de Euler y los puentes de Königsberg.' },
+    { key:'quiz',       emoji:'', label:'Quiz',       desc:'20 preguntas en 4 rondas de 5, sin repetir.' },
+    { key:'ejercicios', emoji:'️', label:'Ejercicios', desc:'5 grafos para identificar si tienen camino o circuito.' },
+    { key:'simulacion', emoji:'', label:'Simulación', desc:'Dibuja tu propio grafo y analízalo en vivo.' },
   ]
 
   return (
@@ -294,9 +293,9 @@ function Menu({ ir }) {
   )
 }
 
-// =====================================================================
+
 // TEORÍA
-// =====================================================================
+
 function Teoria() {
   return (
     <div className="euler-content animate-pop">
@@ -381,9 +380,9 @@ function Teoria() {
   )
 }
 
-// =====================================================================
+
 // QUIZ
-// =====================================================================
+
 function Quiz() {
   const ordenInicial = useMemo(() => shuffle(QUIZ.map((_, i) => i)), [])
   const [orden, setOrden] = useState(ordenInicial)
@@ -511,9 +510,9 @@ function Quiz() {
   )
 }
 
-// =====================================================================
+
 // EJERCICIOS
-// =====================================================================
+
 function Ejercicios() {
   const [i, setI] = useState(0)
   const [seleccion, setSeleccion] = useState(null)
@@ -641,9 +640,9 @@ function GrafoSVG({ nodos, aristas, resaltarImpares }) {
   )
 }
 
-// =====================================================================
+
 // SIMULACIÓN
-// =====================================================================
+
 function Simulacion() {
   const [nodes, setNodes] = useState([])
   const [edges, setEdges] = useState([])

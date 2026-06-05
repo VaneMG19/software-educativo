@@ -25,7 +25,7 @@ const TOPICS = [
     description: 'Visita todos los vértices del grafo una sola vez. Incluye el Teorema de Dirac y el Teorema de Ore.',
     color: '#534AB7',
     glow: 'rgba(83,74,183,0.35)',
-    path: '/hamilton',
+    path: '/temas/hamilton',
     image: imgHamilton,
   },
   {

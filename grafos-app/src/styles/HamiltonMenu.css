@@ -1,0 +1,55 @@
+/* ── Fondo principal ── */
+.hamilton-menu {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #0f0c29, #231b4d, #1a1a2e);
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 4rem;
+}
+
+/* ── Burbujas personalizadas para la sección de Hamilton ── */
+.bubble-ham-1 { 
+    width: 350px; height: 350px; 
+    background: radial-gradient(circle, #534AB7, transparent); 
+    top: -50px; left: -100px; 
+    animation-delay: 0s; 
+}
+.bubble-ham-2 { 
+    width: 400px; height: 400px; 
+    background: radial-gradient(circle, #3B82F6, transparent); 
+    bottom: 10%; right: -150px; 
+    animation-delay: 2s; 
+}
+.bubble-ham-3 { 
+    width: 250px; height: 250px; 
+    background: radial-gradient(circle, #8B5CF6, transparent); 
+    bottom: 20%; left: 10%; 
+    animation-delay: 4s; 
+}
+
+/* ── Gradiente específico para el título de Hamilton ── */
+.gradient-word-hamilton {
+  background: linear-gradient(90deg, #8B5CF6, #3B82F6, #10B981);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
+}
+
+/* ── Ajuste del footer de las tarjetas ── */
+.card-footer-simple {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 0.9rem;
+  margin-top: auto;
+}
+
+/* Nota: Las clases .topics-header, .back-btn, .topics-grid, .topic-card y .animate-pop 
+   funcionarán automáticamente si importas tus estilos globales o si este componente 
+   hereda la estructura de tu proyecto. */

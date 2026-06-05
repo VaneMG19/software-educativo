@@ -33,16 +33,7 @@ const HAMILTON_SUBTOPICS = [
         color: "#3B82F6", // Azul
         glow: "rgba(59,130,246,0.35)",
         path: "/temas/hamilton/ore",
-    },
-    {
-    id: "simulacion",
-    title: "Simulador Interactivo",
-    emoji: "🎮",
-    description: "Dibuja grafos personalizados y pon a prueba los teoremas de Dirac y Ore en tiempo real.",
-    color: "#10B981", // Esmeralda (para denotar acción/juego)
-    glow: "rgba(16,185,129,0.35)",
-    path: "/temas/hamilton/simulador",
-    },
+    }
 ];
 
 export default function HamiltonMenu() {

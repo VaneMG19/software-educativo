@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Topics from './pages/Topics'
 import HamiltonMenu from './pages/HamiltonMenu'
+import HamiltonTeoria from './pages/HamiltonTeoria'
+import Dirac from './pages/Dirac'
 import Euler from './pages/Euler'
 
 // App.jsx tiene las rutas y la lógica de la app
@@ -17,6 +19,9 @@ export default function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/temas" element={<Topics />} />
                 <Route path="/temas/hamilton" element={<HamiltonMenu />} />
+                <Route path="/temas/hamilton/teoria" element={<HamiltonTeoria />} />
+                <Route path="/temas/hamilton/dirac" element={<Dirac />} />
+
                 <Route path="/temas/hamilton/ore" element={<Ore />} />
                 
                 <Route path="/euler" element={<Euler />} />

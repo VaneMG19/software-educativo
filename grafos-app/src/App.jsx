@@ -7,7 +7,7 @@ import Euler from './pages/Euler'
 // App.jsx tiene las rutas y la lógica de la app
 
 //? poner las demás páginas cuando las tengan listas
-//* import Dijkstra from './pages/Dijkstra'
+import Dijkstra from './pages/Dijkstra'
 
 export default function App() {
     return (
@@ -21,7 +21,7 @@ export default function App() {
                 {/*? aquí poner las rutas cuando las tengan listas
           ejemplo: */}
 
-                {/* <Route path="/dijkstra" element={<Dijkstra />} /> */}
+                <Route path="/dijkstra" element={<Dijkstra />} />
             </Routes>
         </BrowserRouter>
     )

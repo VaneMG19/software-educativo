@@ -326,8 +326,8 @@ export default function Dijkstra() {
           <div className="logo-divider" />
           <img src={logoFIEE} alt="FIEE" className="logo-img" />
         </div>
-        <button className="back-btn" onClick={() => navigate('/temas')}>
-          ← Regresar
+        <button className="back-btn" onClick={() => navigate('/dijkstra')}>
+          ← Regresar al Menú
         </button>
       </header>
 

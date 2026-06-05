@@ -2,6 +2,8 @@
 
 Plataforma educativa interactiva sobre teoría de grafos: Camino de Euler, Camino de Hamilton y Algoritmo de Dijkstra. Construida con React + Vite, sin base de datos, desplegada en Vercel.
 
+[Enlace al sitio del proyecto] (https://software-educativo-topaz.vercel.app/)
+
 ---
 
 ## Equipo

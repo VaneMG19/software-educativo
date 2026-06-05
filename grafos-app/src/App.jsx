@@ -8,6 +8,7 @@ import Euler from './pages/Euler'
 
 //? poner las demás páginas cuando las tengan listas
 import Dijkstra from './pages/Dijkstra'
+import Ore from './pages/Ore' // Importamos tu nueva pantalla de Ore
 
 export default function App() {
     return (
@@ -16,6 +17,8 @@ export default function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/temas" element={<Topics />} />
                 <Route path="/temas/hamilton" element={<HamiltonMenu />} />
+                <Route path="/temas/hamilton/ore" element={<Ore />} />
+                
                 <Route path="/euler" element={<Euler />} />
 
                 {/*? aquí poner las rutas cuando las tengan listas

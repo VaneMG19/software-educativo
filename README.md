@@ -71,6 +71,7 @@ grafos-app/
 │   │   ├── Euler.css
 │   │   ├── Hamilton.css
 │   │   └── Dijkstra.css
+│   ├── utils/            # codigos en JS de los algoritmos
 │   ├── App.jsx           # rutas principales (React Router)
 │   └── main.jsx          # punto de entrada
 ├── index.html

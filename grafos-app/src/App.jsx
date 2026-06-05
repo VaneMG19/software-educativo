@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Topics from './pages/Topics'
+import Dijkstra from './pages/Dijkstra'
 
 // App.jsx tiene las rutas y la lógica de la app
 
@@ -15,12 +16,12 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/temas" element={<Topics />} />
+        // <Route path="/dijkstra" element={<Dijkstra />} />
 
         {/*? aquí poner las rutas cuando las tengan listas 
           ejemplo: */}
 
         {/* <Route path="/euler" element={<Euler />} /> */}
-        {/* <Route path="/dijkstra" element={<Dijkstra />} /> */}
       </Routes>
     </BrowserRouter>
   )
